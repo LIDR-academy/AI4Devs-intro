@@ -1,0 +1,1 @@
+Escribe un función en JavaScript que tome un texto como entrada y devuelva como resultado la cadena invertida
