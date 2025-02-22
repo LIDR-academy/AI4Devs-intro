@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse String</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        textarea {
+            width: 100%;
+            max-width: 500px;
+            height: 100px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            padding: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        /* Botón Reverse: fondo azul, texto en blanco, nuevo emote ⏪ */
+        .btn-reverse {
+            background-color: blue;
+            color: white;
+        }
+        /* Botón Copy: fondo oscuro (#333), texto en blanco */
+        .btn-copy {
+            background-color: #333;
+            color: white;
+        }
+        /* Contenedor del resultado con margen superior adicional */
+        .result-container {
+            margin-top: 20px;
+        }
+        /* Etiqueta Result con margen inferior */
+        .result-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #result {
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 500px;
+            word-break: break-all;
+        }
+    </style>
 </head>
 <body>
+<!-- Título invertido -->
+<h1>gnirtS esreveR</h1>
+
+<!-- Caja de texto -->
+<textarea id="inputText" placeholder="Escribe aquí el texto"></textarea>
+
+<!-- Botón Reverse en una nueva línea con emote ⏪ -->
+<div>
+    <button id="reverseBtn" class="btn btn-reverse">
+        Reverse ⏪
+    </button>
+</div>
+
+<!-- Resultado con margen adicional -->
+<div class="result-container">
+    <label for="result">Result:</label>
+    <p id="result"></p>
+</div>
+
+<!-- Botón Copy con emote de clipboard -->
+<div>
+    <button id="copyBtn" class="btn btn-copy">
+        Copy 📋
+    </button>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
