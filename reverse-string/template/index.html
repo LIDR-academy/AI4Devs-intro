@@ -12,7 +12,6 @@
         h1 {
             font-size: 2em;
         }
-        /* Etiqueta para el input con margen inferior */
         .input-label {
             font-weight: bold;
             display: block;
@@ -35,12 +34,6 @@
             border-radius: 5px;
             margin-top: 10px;
         }
-        /* Botón Reverse: fondo azul, texto en blanco, emote ⏪ */
-        .btn-reverse {
-            background-color: blue;
-            color: white;
-        }
-        /* Botón Copy: fondo oscuro (#333), texto en blanco */
         .btn-copy {
             background-color: #333;
             color: white;
@@ -63,30 +56,18 @@
     </style>
 </head>
 <body>
-<!-- Título invertido -->
 <h1>gnirtS esreveR</h1>
 
-<!-- Label asociado a la caja de texto para mejorar la accesibilidad -->
 <label class="input-label" for="inputText">Input:</label>
-<!-- Caja de texto -->
 <textarea id="inputText" placeholder="Escribe aquí el texto"></textarea>
 
-<!-- Botón Reverse en nueva línea con emote ⏪ -->
-<div>
-    <button id="reverseBtn" class="btn btn-reverse">
-        Reverse ⏪
-    </button>
-</div>
-
-<!-- Resultado con margen adicional -->
 <div class="result-container">
     <label for="result">Result:</label>
     <p id="result"></p>
 </div>
 
-<!-- Botón Copy con emote de clipboard -->
 <div>
-    <button id="copyBtn" class="btn btn-copy">
+    <button id="copyBtn" class="btn btn-copy" style="display: none;">
         Copy 📋
     </button>
 </div>
