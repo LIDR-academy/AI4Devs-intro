@@ -12,6 +12,12 @@
         h1 {
             font-size: 2em;
         }
+        /* Etiqueta para el input con margen inferior */
+        .input-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
         textarea {
             width: 100%;
             max-width: 500px;
@@ -29,7 +35,7 @@
             border-radius: 5px;
             margin-top: 10px;
         }
-        /* Botón Reverse: fondo azul, texto en blanco, nuevo emote ⏪ */
+        /* Botón Reverse: fondo azul, texto en blanco, emote ⏪ */
         .btn-reverse {
             background-color: blue;
             color: white;
@@ -39,14 +45,13 @@
             background-color: #333;
             color: white;
         }
-        /* Contenedor del resultado con margen superior adicional */
         .result-container {
             margin-top: 20px;
         }
-        /* Etiqueta Result con margen inferior */
         .result-container label {
             display: block;
             margin-bottom: 5px;
+            font-weight: bold;
         }
         #result {
             font-weight: bold;
@@ -61,10 +66,12 @@
 <!-- Título invertido -->
 <h1>gnirtS esreveR</h1>
 
+<!-- Label asociado a la caja de texto para mejorar la accesibilidad -->
+<label class="input-label" for="inputText">Input:</label>
 <!-- Caja de texto -->
 <textarea id="inputText" placeholder="Escribe aquí el texto"></textarea>
 
-<!-- Botón Reverse en una nueva línea con emote ⏪ -->
+<!-- Botón Reverse en nueva línea con emote ⏪ -->
 <div>
     <button id="reverseBtn" class="btn btn-reverse">
         Reverse ⏪

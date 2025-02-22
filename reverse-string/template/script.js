@@ -1,8 +1,8 @@
 // Función para invertir la cadena y mostrar el resultado
 document.getElementById('reverseBtn').addEventListener('click', () => {
     const input = document.getElementById('inputText').value;
-    const reversed = input.split('').reverse().join('');
-    document.getElementById('result').textContent = reversed;
+    // Se asigna directamente el resultado sin declarar variable intermedia redundante
+    document.getElementById('result').textContent = input.split('').reverse().join('');
 });
 
 // Función para copiar el resultado al portapapeles
