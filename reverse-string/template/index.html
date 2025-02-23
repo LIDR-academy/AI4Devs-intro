@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invertir Cadena de Texto</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="script.js"></script>
+  <div class="container">
+    <header>
+      <h1>
+        <!-- Ícono SVG de título -->
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 22 8 20 10"></polyline>
+          <path d="M4 12h16"></path>
+          <polyline points="12 18 14 20 12 22"></polyline>
+          <path d="M4 12a8 8 0 0 0 8 8"></path>
+        </svg>
+        Invertir Cadena de Texto
+      </h1>
+    </header>
+
+    <!-- Bloque 1: Resultado al pulsar el botón -->
+    <section class="block">
+      <h2>
+        <!-- Ícono SVG para Bloque 1 -->
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="17 1 21 5 17 9"></polyline>
+          <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+        </svg>
+        Bloque 1: Con Botón
+      </h2>
+      <p>Introduce una cadena y pulsa el botón para invertirla.</p>
+      <input type="text" id="inputBlock1" placeholder="Ej: AI4Devs">
+      <button id="buttonBlock1">Invertir</button>
+      <p>Resultado: <span id="resultBlock1"></span></p>
+    </section>
+
+    <!-- Bloque 2: Resultado al introducir 3 o más caracteres -->
+    <section class="block">
+      <h2>
+        <!-- Ícono SVG para Bloque 2 -->
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20h9"></path>
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+        </svg>
+        Bloque 2: Con 3 o Más Caracteres
+      </h2>
+      <p>Introduce una cadena. El resultado se mostrará cuando escribas 3 o más caracteres.</p>
+      <input type="text" id="inputBlock2" placeholder="Ej: AI4Devs">
+      <p>Resultado: <span id="resultBlock2"></span></p>
+    </section>
+
+    <!-- Bloque 3: Resultado automático -->
+    <section class="block">
+      <h2>
+        <!-- Ícono SVG para Bloque 3 -->
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M23 4v6h-6"></path>
+          <path d="M1 20v-6h6"></path>
+          <path d="M3.51 9a9 9 0 0 1 14.13-3.36L23 10"></path>
+          <path d="M20.49 15a9 9 0 0 1-14.13 3.36L1 14"></path>
+        </svg>
+        Bloque 3: Automático
+      </h2>
+      <p>Introduce una cadena. El resultado se actualizará automáticamente conforme escribes.</p>
+      <input type="text" id="inputBlock3" placeholder="Ej: AI4Devs">
+      <p>Resultado: <span id="resultBlock3"></span></p>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
