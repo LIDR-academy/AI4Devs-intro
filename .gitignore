@@ -4,3 +4,12 @@
 **/.env.example
 **/node_modules
 **/prompts_master.md
+/.idea/misc.xml
+/.idea/vcs.xml
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
